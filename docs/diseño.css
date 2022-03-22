@@ -14,16 +14,3 @@ body{
     background-color: crimson;
     font-size: 20psx;
   }
-.image_blink{
-    animation: blink 1.5s infinite;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  @keyframes blink {
-    50% {
-      opacity: 0;
-    }
-  }
