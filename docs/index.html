@@ -15,18 +15,29 @@
         <h2>Repositorios de Agustin Margareto 5°c</h2>
       </div>
   </header>
-  <i onclick="myFunction(this)" class="fa fa-search-plus"></i>
-<p>This is a paragraph.</p>
+<summary><button id="bdd">Base de Datos</button>
+<i id="aaaa" onclick="myFunction(this)" class="fa fa-search-plus"></i>
+<p id="info1">This is a paragraph.</p>
+
 <script>
+
   $(document).ready(function(){
-    $("i").click(function(){
-      $("p").toggle();
+    $("button").click(function(){
+      $(aaaa).toggle();
+      $(info1).toggle();
+    });
+  });
+
+  $(document).ready(function(){
+    $(aaaa).click(function(){
+      $(info1).toggle();
     });
   });
 
     function myFunction(x) {
   x.classList.toggle("fa-search-minus");
 }
+
   </script>
 </body>
 </html>
