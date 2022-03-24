@@ -16,29 +16,45 @@
         <b><p>Programacion Orientada a Objetos</p></b>
       </div>
   </header>
-<summary><button id="bdd">Base de Datos</button>
-<i id="aaaa" onclick="myFunction(this)" class="fa fa-search-plus"></i>
-<p id="info1">This is a paragraph.</p>
+  <button id="bdd">Base de Datos</button>
+  <div id="todo">
+  <i onclick="change_icon(this)" class="fa fa-eye"></i>
+  </div>  
+  <div id="ejercicios">
+    <p class="info1">This is a paragraph.</p>
+  </div>
 
-<script>
+
+    <script>
+    var todo = document.getElementById("todo");  
+    var div = document.getElementById("ejercicios");
+    var codigo = div.getElementsByClassName("info1");
+
+    if (todo.style.display === "block") {
+    todo.style.display = "none";
+    }
 
   $(document).ready(function(){
     $("button").click(function(){
-      $(aaaa).toggle();
-      $(info1).toggle();
+      $("i").toggle();
+      if (div.style.display === "none") {
+        div.style.display = "block";
+    } else {
+        div.style.display = "none";
+    }
     });
   });
 
   $(document).ready(function(){
-    $(aaaa).click(function(){
-      $(info1).toggle();
+    $("i").click(function(){
+      $(codigo).toggle();
     });
   });
 
-    function myFunction(x) {
-  x.classList.toggle("fa-search-minus");
+    function change_icon(icon) {
+  icon.classList.toggle("fa-eye-slash");
 }
 
-  </script>
-</body>
+    </script>
+  </body>
 </html>
