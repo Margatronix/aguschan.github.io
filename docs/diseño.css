@@ -19,11 +19,57 @@ body{
     background-color: crimson;
     font-size: 20psx;
   }
-  .fa {
+.fa {
     font-size: 50px;
     cursor: pointer;
     user-select: none;
   }
-  i {
+i {
     color: white;
   }
+#poo {
+    position: absolute;
+    letter-spacing: 0.1cm;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: crimson;
+    font-size: 0.5cm;
+    margin-left: 3.5cm;
+    max-width: 7cm;
+  }
+#sql {
+    position: absolute;  
+    letter-spacing: 0.1cm;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: crimson;
+    font-size: 0.5cm;
+    margin-left: 16cm;
+    max-width: 9cm;
+}
+#html {
+    position: absolute;  
+    letter-spacing: 0.1cm;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: crimson;
+    font-size: 0.5cm;
+    margin-left: 30cm;
+    max-width: 9cm;
+}
+#imagen1 {
+    margin-left: 3cm;
+    margin-top: 1.5cm;
+    cursor: pointer;    
+}
+#imagen2 {
+  margin-left: 5cm;
+  margin-top: 1.5cm;
+  cursor: pointer;
+}
+#imagen3 {
+  margin-left: 5cm;
+  margin-top: 1.5cm;
+  cursor: pointer;
+}
+.imagenes {
+  height: 4.8cm;
+  width: 8cm;
+}
