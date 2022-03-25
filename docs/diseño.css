@@ -62,17 +62,21 @@ i {
     max-width: 9cm;
 }
 #imagen1 {
-    margin-left: 3cm;
+    margin-left: 10%;
+    max-width: 20%;
     margin-top: 1.5cm;
     cursor: pointer;    
 }
 #imagen2 {
-  margin-left: 5cm;
+  margin-left: 10%;
+  max-width: 20%;
   margin-top: 1.5cm;
   cursor: pointer;
 }
 #imagen3 {
-  margin-left: 5cm;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 20%;
   margin-top: 1.5cm;
   cursor: pointer;
 }
