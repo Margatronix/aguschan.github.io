@@ -40,8 +40,8 @@ i {
     font-family: 'Roboto Condensed', sans-serif;
     color: crimson;
     font-size: 0.5cm;
-    margin-left: 3.5cm;
-    max-width: 7cm;
+    margin-left: 10%;
+    max-width: 20%;
   }
 #sql {
     position: absolute;  
@@ -49,8 +49,8 @@ i {
     font-family: 'Roboto Condensed', sans-serif;
     color: crimson;
     font-size: 0.5cm;
-    margin-left: 16cm;
-    max-width: 9cm;
+    margin-left: 40%;
+    max-width: 20%;
 }
 #html {
     position: absolute;  
@@ -58,8 +58,9 @@ i {
     font-family: 'Roboto Condensed', sans-serif;
     color: crimson;
     font-size: 0.5cm;
-    margin-left: 30cm;
-    max-width: 9cm;
+    margin-left: 70%;
+    margin-right: 10%;
+    max-width: 20%;
 }
 #imagen1 {
     margin-left: 10%;
@@ -89,7 +90,9 @@ i {
   background-color:black;
   font-size: 25px;
   margin-top: 0.5cm;
-  margin-left: 13cm;
+  margin-left: 30%;
+  margin-right: 30%;
+  max-width: 40%;
 }
 .titulosEjercicios {  
   letter-spacing: 0.1cm;
