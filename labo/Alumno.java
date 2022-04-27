@@ -21,11 +21,15 @@ private HashMap<String, ArrayList<Float>> notasPorMateria;
         this.notasPorMateria = new HashMap<String, ArrayList<Float>>();
     }
     public void agregarNota (String materia, float nota) {
-        notasPorMateria.get(materia).add(nota);
+        if(this.notasPorMateria.containsKey(materia))   this.notasPorMateria.get(materia).add(nota);
+        else {
+            this.agregarMateria(materia);
+            this.notasPorMateria.get(materia).add(nota);
+        };
     }
      public float menorNota(){
         float nota_menor=10;
-        for (ArrayList<Float> notasTotales : notasPorMateria.values()) {
+        for (ArrayList<Float> notasTotales : this.notasPorMateria.values()) {
             for (float notas: notasTotales) {
                 if(nota_menor>notas) nota_menor=notas;
             }
@@ -36,7 +40,7 @@ private HashMap<String, ArrayList<Float>> notasPorMateria;
 
     public float mayorNota(){
         float nota_mayor=0;
-        for (ArrayList<Float> notasTotales : notasPorMateria.values()) {
+        for (ArrayList<Float> notasTotales : this.notasPorMateria.values()) {
             for (float notas: notasTotales) {
                 if(nota_mayor<notas) nota_mayor=notas;
             }
@@ -46,14 +50,14 @@ private HashMap<String, ArrayList<Float>> notasPorMateria;
 
     public float promedioNotas(){
         float nota_promedio=0;
-        int messi=0;
-        for (ArrayList<Float> notasTotales : notasPorMateria.values()) {
-            messi+=notasTotales.size();
+        int contador=0;
+        for (ArrayList<Float> notasTotales : this.notasPorMateria.values()) {
+            contador+=notasTotales.size();
             for (float notas: notasTotales) {
                  nota_promedio+=notas;
             }
         }
-        nota_promedio=nota_promedio/messi;
+        nota_promedio=nota_promedio/contador;
         return nota_promedio;
     }
     public void agregarMateria(String nombreDeMateria){
