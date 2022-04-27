@@ -96,6 +96,7 @@ i {
   margin-left: 33%;
   max-width: 50%;
   border: 0;
+  text-align: center;
 }
 .titulosEjercicios {  
   letter-spacing: 0.1cm;
@@ -103,13 +104,26 @@ i {
   color: white;
   font-size: 0.5cm;
   text-align: center;
+  cursor: context-menu;
 }
 .titulo_codigo {
   text-align: center;
+  color: coral;
+  text-decoration: none;
 }
 #ejercicios {
+  margin-top: 0.5cm;
   display: none;
+  overflow-y: auto;
+  height: 400px;
+  width: 90%; 
 }
 #ejercicio1 {
+  display: none;
+}
+#ejercicio2 {
+  display: none;
+}
+#ejercicio3 {
   display: none;
 }
