@@ -18,19 +18,28 @@
   </header>
   <button id="poo_button">Ejercicios de Programacion Orientada a Objetos</button>
   <div id="ejercicios">
-  <div id="enunciado1">
-    <h1 class="titulosEjercicios"><i id="i1" onclick="change_icon(this)" class="fa fa-eye-slash"></i>Ejercicio del 8 de Marzo Parte 1</h1>
-  </div>  
+    <h1 class="titulosEjercicios"><i id="i1" onclick="change_icon(this)" class="fa fa-eye"></i>Ejercicio del 8 de Marzo Parte 1 y 2</h1> 
     <div id="ejercicio1">
-      <a href="" class="titulo_codigo">Main.java</a>
-      <a href="" class="titulo_codigo">Persona.java</a>
+      <p><a href="https://raw.githubusercontent.com/aguschan/aguschan.github.io/main/labo/ejercicio%20parte1/Main.java" class="titulo_codigo">Main.java</a></p>
+      <p><a href="https://raw.githubusercontent.com/aguschan/aguschan.github.io/main/labo/ejercicio%20parte1/persona.java" class="titulo_codigo">Persona.java</a></p>
+    </div>
+      <h1 class="titulosEjercicios"><i id="i2" onclick="change_icon(this)" class="fa fa-eye"></i>Ejercicio del 9 de Marzo Parte 1</h1>
+      <div id="ejercicio2">
+      <p><a href="https://raw.githubusercontent.com/aguschan/aguschan.github.io/main/labo/ejercicio%202/Main.java" class="titulo_codigo">Main.java</a></p>
+      <p><a href="https://raw.githubusercontent.com/aguschan/aguschan.github.io/main/labo/ejercicio%202/Producto.java" class="titulo_codigo">Producto.java</a></p>
+    </div>
+      <h1 class="titulosEjercicios"><i id="i3" onclick="change_icon(this)" class="fa fa-eye"></i>Ejercicio del 9 de Marzo Parte 2</h1>
+    <div id="ejercicio3">
+      <p><a href="https://raw.githubusercontent.com/aguschan/aguschan.github.io/main/labo/arraylist/Main.java" class="titulo_codigo">Main.java</a></p>
+      <p><a href="https://raw.githubusercontent.com/aguschan/aguschan.github.io/main/labo/arraylist/SistemaDeRegistroDePersonas.java" class="titulo_codigo">SistemaDeRegistroDePersonas.java</a></p>
+      <p><a href="https://raw.githubusercontent.com/aguschan/aguschan.github.io/main/labo/arraylist/persona.java" class="titulo_codigo">Persona.java</a></p>
     </div>
   </div>
 
     <script>
-    var enunciado1 = document.getElementById("enunciado1");  
-    var ejercicios = document.getElementById("ejercicios");
     var t_codigo = ejercicio1.getElementsByClassName("titulo_codigo");
+    var t_codigo2 = ejercicio2.getElementsByClassName("titulo_codigo");
+    var t_codigo3 = ejercicio3.getElementsByClassName("titulo_codigo");
 
   $(document).ready(function(){
     $("button").click(function(){
@@ -53,20 +62,30 @@
     });
   });
 
-  /*$(document).ready(function(){
+  $(document).ready(function(){
     $(i2).click(function(){
-      $(codigo1).toggle();
+      $(t_codigo2).toggle();
+      if (ejercicio2.style.display === "none") {
+        ejercicio2.style.display = "block";
+    } else {
+        ejercicio2.style.display = "none";
+    }
     });
   });
 
   $(document).ready(function(){
     $(i3).click(function(){
-      $(codigo2).toggle();
+      $(t_codigo3).toggle();
+      if (ejercicio3.style.display === "none") {
+        ejercicio3.style.display = "block";
+    } else {
+        ejercicio3.style.display = "none";
+    }
     });
   });
-*/
+ 
     function change_icon(icon) {
-  icon.classList.toggle("fa-eye");
+  icon.classList.toggle("fa-eye-slash");
 }
 
     </script>
