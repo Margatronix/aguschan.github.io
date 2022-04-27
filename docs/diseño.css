@@ -49,7 +49,7 @@ i {
     font-family: 'Roboto Condensed', sans-serif;
     color: crimson;
     font-size: 0.5cm;
-    margin-left: 40%;
+    margin-left: 37%;
     max-width: 20%;
 }
 #html {
@@ -58,7 +58,7 @@ i {
     font-family: 'Roboto Condensed', sans-serif;
     color: crimson;
     font-size: 0.5cm;
-    margin-left: 70%;
+    margin-left: 67%;
     margin-right: 10%;
     max-width: 20%;
 }
@@ -66,13 +66,15 @@ i {
     margin-left: 10%;
     max-width: 20%;
     margin-top: 1.5cm;
-    cursor: pointer;    
+    cursor: pointer;   
+    border: 0; 
 }
 #imagen2 {
   margin-left: 10%;
   max-width: 20%;
   margin-top: 1.5cm;
   cursor: pointer;
+  border: 0;
 }
 #imagen3 {
   margin-left: 10%;
@@ -80,19 +82,20 @@ i {
   max-width: 20%;
   margin-top: 1.5cm;
   cursor: pointer;
+  border: 0;
 }
 .imagenes {
-  height: 4.8cm;
-  width: 8cm;
+  height: 4cm;
+  width: 7cm;
 }
 #poo_button {
-  color:lawngreen;
-  background-color:black;
+  color:crimson;
+  background-color: transparent;
   font-size: 25px;
   margin-top: 0.5cm;
-  margin-left: 30%;
-  margin-right: 30%;
-  max-width: 40%;
+  margin-left: 33%;
+  max-width: 50%;
+  border: 0;
 }
 .titulosEjercicios {  
   letter-spacing: 0.1cm;
@@ -103,4 +106,10 @@ i {
 }
 .titulo_codigo {
   text-align: center;
+}
+#ejercicios {
+  display: none;
+}
+#ejercicio1 {
+  display: none;
 }
